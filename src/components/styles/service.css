@@ -10,14 +10,14 @@
 }
 
 .charges {
-    position: relative;
     background-color: rgb(93, 37, 14);
     color: #fff;
     border-radius: 50%;
     border: 2px solid rgb(68, 4, 4);
-    padding: 20px 0;
     width: 5rem;
     margin: 1rem auto 0;
+    padding: 20px 0;
+    text-align: center;
     top: 0;
     transform: translateY(-40px);
 }

@@ -1,0 +1,40 @@
+.section_title {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.section_title h1{
+    font-size: 3rem;
+    color: #282628;
+    opacity: 0.7;
+}
+
+.section_title p{
+    font-size: 1.5rem;
+    color: #282628;
+    text-transform: uppercase;
+}
+
+@media screen and (max-width:426px) {
+    .section_title h1{
+        font-size: 2.5rem;
+    }
+    .section_title p{
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (max-width:376px) {
+    .section_title h1{
+        font-size: 2.3rem;
+    }
+    
+}
+@media screen and (max-width:321px) {
+    .section_title h1{
+        font-size: 2rem;
+    }
+    .section_title p{
+        font-size: 1rem;
+    }
+}

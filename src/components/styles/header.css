@@ -1,0 +1,100 @@
+.navbar {
+    height: 80px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 10px 0 15px #fff;
+    color: #fff;
+    background-color: #a6a4a4;
+    background: transparent;
+    position: fixed;
+    z-index: 10;
+    transition: 500ms ease;
+}
+.show_nav {
+    background-color: #302f2f;
+    box-shadow: 10px 0 15px #000;
+}
+
+.nav_brand {
+    width: 5%;
+    border-top: 3px solid ;
+    border-left: 2px solid ;
+    padding: 10px
+}
+
+.nav_items {
+    display: flex;
+    gap: 50px;
+    height: 2rem;
+}
+
+.nav_items .nav_list a{
+    font-size: 1.5rem;
+    font-weight: bolder;
+    cursor: pointer;
+}
+.hamburger_menu {
+    display: none;
+}
+
+@media screen and (max-width:768px) {
+    .navbar {
+        justify-content: space-between;
+        padding: 0 1.5rem;
+    }
+
+    .nav_items {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        top: 0;
+        left: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-image: url("https://images.unsplash.com/photo-1542038784456-1ea8e935640e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8cGhvdG9ncmFwaHl8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60");
+        transition: 400ms ease;
+        background-size: cover;
+        background-position: center;
+        object-fit: cover;
+    }
+    .nav_items::after {
+        
+    }
+
+    .nav_items.show_items {
+        left: 0;
+    }
+
+    .nav_items .nav_list a {
+        color: #fff;
+    }
+
+    .hamburger_menu {
+        display: initial;
+        z-index: 11;
+    }
+
+    .hamburger_menu .line{
+        height: 5px;
+        width: 2rem;
+        background-color: #FFf;
+        margin: 5px 0;
+        border-radius: 10px;
+        transition: 300ms ease;
+    }
+
+    .hamburger_menu.active #line1 {
+        transform: translateY(10px) rotateZ(-45deg);
+    }
+
+    .hamburger_menu.active #line2 {
+        opacity: 0;
+    }
+
+    .hamburger_menu.active #line3 {
+        transform: translateY(-10px) rotateZ(45deg);
+    }
+}

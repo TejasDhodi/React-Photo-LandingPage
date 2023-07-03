@@ -1,0 +1,100 @@
+.service_section {
+    margin: 10% 15%;
+}
+
+.services_container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+.charges {
+    position: relative;
+    background-color: rgb(93, 37, 14);
+    color: #fff;
+    border-radius: 50%;
+    border: 2px solid rgb(68, 4, 4);
+    padding: 20px;
+    width: 5rem;
+    margin: 1rem auto 0;
+    top: 0;
+    transform: translateY(-40px);
+}
+
+.service_card {
+    position: relative;
+    box-shadow: 0 0 15px #595757;
+    width: 20rem;
+    height: 20rem;
+    padding: 0 40px;
+    border-radius: 10px;
+    background-image: linear-gradient(to left, #fff, rgb(93, 37, 14));
+}
+
+.service_card:hover {
+    box-shadow: 0 0 15px #000;
+    background-image: linear-gradient(to left, #fff, rgba(80, 24, 2, 1));
+}
+
+.service_title {
+    margin: 1rem auto;
+    text-align: center;
+}
+
+.service_title h3{
+    margin: 10px 0;
+}
+
+.service_title hr{
+    width: 30%;
+    margin: 0 auto;
+    border-style: none;
+    border-top-style: dotted;
+    border-width: 5px;
+}
+
+.service_description li {
+    list-style: circle;
+    margin: 10px 0;
+}
+
+.service_controls {
+    width: 80%;
+    margin: 3rem auto;
+}
+
+.service_controls a{
+    background-color: #fff;
+}
+
+@media screen and (max-width:768px) {
+    .services_container {
+        gap: 30px;
+    }
+}
+
+@media screen and (max-width:426px) {
+    .services_container {
+        gap: 70px;
+    }
+}
+
+@media screen and (max-width:321px) {
+    .service_card {
+        width: 17rem;
+    }
+    .service_title {
+        margin: 0;
+    }
+
+    .service_controls {
+        width: 80%;
+        margin: 1.5rem auto;
+    }
+
+    .service_controls a {
+        font-size: 0.9rem;
+    }
+
+}
